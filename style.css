@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    height: 100vh;
+    background: no-repeat  var(--Pale-blue) url(images/pattern-background-desktop.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#container {
+    background-color: white;
+    width: 310px;
+    height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}
+.illustration-hero {
+    width: 100%;
+}
+.main {
+    height: 300px;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin:0;
+ 
+}
+.main .order-summary {
+    
+}
+.main .order-summary h2 {
+    text-align: center;
+    font-size: 20px;
+   
+}
+.main .congrats p {
+    font-size: 12px;
+    text-align: center;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+
+}
+.plan .music-plan {
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    background-color: var(--Very-pale-blue);
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+.plan .music-plan .icon {
+    height: 30px;
+}
+.plan .music-plan p {
+    font-weight: bold;
+    font-size: 12px;
+    padding-right: 45px;
+}
+.plan .music-plan span {
+    color: var(--Desaturated-blue);
+    font-size: 12px;
+    font-weight: 500;
+}
+.plan .music-plan a {
+    font-size: 10px;
+    color: var(--Bright-blue);
+    font-weight: bold;
+}
+.footer {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--Pale-blue) 0px 10px 10px 4px ;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.btn-proceed {
+    height: 35px;
+    width: 250px;
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 10px;
+    border: none;
+    
+
+    
+}
+.cancel {
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--Desaturated-blue);
+}
+@media (max-width: 259px) {
+    #container {
+        height: 420px;
+        transition: 0.5s;
+    }
+    .order-summary h2 {
+        font-size: 2px;
+        color: blue;
+    }
+    .plan .music-plan p {
+        padding: 0;
+        transition: 0.5s;
+    }
+}
