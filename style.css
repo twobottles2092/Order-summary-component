@@ -14,7 +14,8 @@
 }
 body {
     height: 100vh;
-    background: no-repeat  var(--Pale-blue) url(images/pattern-background-desktop.svg);
+    width: 100vw;
+    background: var(--Pale-blue) url(images/pattern-background-desktop.svg) no-repeat left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,6 +123,9 @@ body {
 .btn-proceed:hover {
     background-color: rgb(84, 84, 213);
     cursor: pointer;
+}
+.cancel:hover {
+    color: black;
 }
 @media (max-width: 259px) {
     #container {
